@@ -10,6 +10,7 @@ const { title = 'Red Arteria' } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/red-favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<title>{ title }</title>
 	</head>
 		<body>
@@ -23,16 +24,5 @@ const { title = 'Red Arteria' } = Astro.props;
 	body {
 		background: var(--surf2);
 		color: var(--text1);
-	}
-
-	main {
-		width: 100vw;
-		height: 200vh;
-		background-image: url('/trazo-back.svg');
-		background-attachment: scroll;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center right -8rem;
-/*		border: 1px solid gray;*/
 	}
 </style>
