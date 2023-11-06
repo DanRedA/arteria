@@ -89,6 +89,8 @@ import tracks from '../../data/tracks.json';
 <style type="text/css">
 	
 	#a-player {
+		background: var(--black-1);
+		color: var(--white-2);
 		border: 1px solid gray;
 		max-width: 24rem;
 		text-align: center;
@@ -115,6 +117,7 @@ import tracks from '../../data/tracks.json';
 	}
 	.song-data {
 		padding: 1rem 0 1rem;
+		background: var(--black-1);
 		border-top: 1px solid gray;
 		border-bottom: 1px solid gray;
 	}
@@ -130,7 +133,7 @@ import tracks from '../../data/tracks.json';
 		display: flex;
 		gap: .25rem;
 		justify-content: space-between;
-		color: var(--text2);
+		color: var(--white-1);
 	}
 	.controls button {
 		cursor: pointer;
@@ -140,8 +143,6 @@ import tracks from '../../data/tracks.json';
 	}
 	.controls-play {
 		flex-basis: 54px;
-		border: 1px solid var(--text2);
-		border-radius: 50%;
 		padding: 10px;
 	}
 	.controls-title {
@@ -209,7 +210,7 @@ import tracks from '../../data/tracks.json';
 	}
 	.song-btn {
 		width: 100%;
-		padding: .5rem;
+		padding: .35rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -217,10 +218,14 @@ import tracks from '../../data/tracks.json';
 	}
 	.song-btn p {
 		cursor: pointer;
+		font-size: 1rem;
 	}
 	.song-btn p:hover {
 		font-weight: bold;
 		color: var(--primary);
+	}
+	.song-list {
+		padding: 0.5rem;
 	}
 	.song-list li.active p {
 		font-weight: bold;
@@ -228,7 +233,7 @@ import tracks from '../../data/tracks.json';
 	}
 
 	.track-time {
-		color: var(--text2);
+		color: var(--white-1);
 	}
 	.player-footer {
 		padding: .5rem;
@@ -240,8 +245,8 @@ import tracks from '../../data/tracks.json';
 		display: none;
 	}
 	.light {
-		opacity: 50%;
-		color: var(--text2);
+/*		opacity: 50%;*/
+		color: var(--white-3);
 	}
 </style>
 
